@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="TR" />
+</head>
+
+
+
+
+
+
+<div class="body clearfix" id="news-detail-body">
+<div class="image clearfix" style="position:relative;">
+<div id="KaydedildiMesaji">
+<div id="TopMembersZone3">
+<div class="kaydedilemediMesajiTxt">
+<img alt="Onaylanmadı" class="mesajKapatBtn" height="14" src="/images/onaylanmadi.gif" width="14"/> Bu haberi favori listenize eklemek için 
+		<a alt="Üye Girişi" class="flyOutOpener" href="javascript:;" id="login-link" style="color: #e50000; font-weight:bold;">üyelik girişi</a> yapmalısınız. Üye değilseniz <a alt="Üye Ol" class="flyout-open" href="/uyelik" style="color: #e50000; font-weight:bold;" target="_blank">tıklayın.</a>
+</div>
+<div class="flyout-box">
+<div class="wrap">
+<div id="FavEkleMemberLoginProcessTxt"></div>
+<div class="MemberLoginTxt">
+<span style="float: left">Habertürk'e </span> <a href="#" onclick="login('facebook'); return false;" style="color: #324878; font-weight:bold; padding-left: 2px; " title="Facebook ile hızlı bağlanın"> facebook </a> veya <br/><a href="#" onclick="login('twitter'); return false;" style="color: #48AECC; font-weight:bold; padding-left: 2px; " title="Twitter ile hızlı bağlanın"> twitter </a> hesabınızdan hızlı
+				bağlantı yapabileceğiniz gibi e-posta hesabınızla da 
+				<a href="/uyelik" style="color: #c60505; font-weight:bold;">yeni üyelik</a> yapabilirsiniz.
+			</div>
+<div class="MemberLoginForm">
+<label>E-Posta</label>
+<input class="MemberLoginInput" id="FavEkleMemberLoginUserName" type="text"/>
+<label>Şifre</label>
+<input class="MemberLoginInput" id="FavEkleMemberLoginPassword" type="password"/>
+<input class="FavEkleMemberLoginBtn" id="FavEkleMemberLoginBtn" type="submit" value=""/>
+</div>
+<div class="MemberLoginBottomText"><a href="/uyelik/sifremi_hatirlat">E-Posta</a> veya <a href="/uyelik/sifremi_hatirlat">şifremi unuttum</a></div>
+<div class="clear_both"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	HTUyelik.Init(786281);
+	$("#KaydedildiMesaji .flyOutOpener").click(function(){ 							
+		$("#KaydedildiMesaji .flyout-box").toggle();
+	});
+</script>
+</div>
+<img alt="Tecavüzcüsünün kafasını kesip köy meydanına atan Nevin Yıldırım merak edilen her şeyi Habertürk'e anlattı..." class="news-image" src="http://im.haberturk.com/2012/10/18/786281_detay.jpg?1350546630"/>
+<a href="javascript:;" onclick="FavorilereEkle(HaberID)" style=" position: absolute; top:267px; right:0px;" title="Favorilerime Ekle"><img alt="Sonra Oku" height="32" id="favorilereEkleBtn" src="/images/uye_profil/favorilere_ekle_btn.png" width="38"/></a>
+<ul class="share-buttons clearfix" style="width:288px; border: 1px solid #cacbcf;">
+<li class="twit-share-haberdetay">
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.haberturk.com%2Fgundem%2Fhaber%2F786281-emzirirsem-kopamam-diye-korkuyorum&amp;via=haberturk&amp;count=none&amp;text=Emzirirsem%20kopamam%20diye%20korkuyorum%21%20-%20Habert%C3%BCrk" style="width:55px; height:20px;"></iframe>
+</li>
+<li class="google-plus-one-haberdetay">
+<g:plusone count="true" href="http://www.haberturk.com/gundem/haber/786281-emzirirsem-kopamam-diye-korkuyorum" size="medium"></g:plusone>
+</li>
+<li class="facebook-like-haberdetay">
+<a name="fb_share" share_url="http://www.haberturk.com/gundem/haber/786281-emzirirsem-kopamam-diye-korkuyorum" type="button_count">Paylaş</a><script src="http://static.ak.fbcdn.net/connect.php/tr_TR/js/FB.Share" type="text/javascript"></script>
+</li>
+<li style="float: left; width:18px; text-align: center; padding: 6px 0px 0px 4px; ">
+<a href="javascript:;" onclick="Gonder(HaberID)"><img alt="Gönder" height="12" src="/images/zarf.gif" width="17"/></a>
+</li>
+</ul>
+<!-- ilgili galeri { -->
+<div class="NewsCommentMain">
+<div class="NewsGaleriMain">
+<div class="NewsGaleriHeader"><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay" title="İlgili Foto Galeri">İlgili Foto Galeri</a></div>
+<div class="NewsGaleriPhotos">
+<a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay"><img src="http://im.haberturk.com/galeri/2012/10/18/417207/28530ff19490219f15dee9a0c3318a56_120.jpg"/></a><a class="NewsGaleriListCent" href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay/1/2"><img src="http://im.haberturk.com/galeri/2012/10/18/417207/57357d4995946f73a846b1d0f34818ce_120.jpg"/></a><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay/1/3"><img src="http://im.haberturk.com/galeri/2012/10/18/417207/4990d0ed1750c7295a37b0671b817460_120.jpg"/></a> </div>
+<div class="NewsGaleriTitle"><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay">Türkiye'nin konuştuğu olay</a></div>
+<div class="NewsGaleriGaleriLink"><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay">Galeriye gitmek için tıklayınız</a></div>
+</div>
+</div>
+<!-- ilgili galeri } -->
+<!-- ilgili video { -->
+<div class="NewsCommentMain">
+<div class="NewsGaleriMain">
+<div class="NewsGaleriHeader"><a title="İlgili Video">İlgili Video</a></div>
+<div class="NewsGaleriExcerpt clearfix">
+<a class="NewsGaleriVideos" href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">
+<img height="54" src="http://mo.htimg.net/video/2012/10/18/D0695436EFA30183C46EFF0D2E28B0BC_k.jpg?v=1350546613" width="80"/></a>
+<div class="NewsGaleriExcerptWrap">
+<a class="news-video-title" href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">"O bebeği emzirmem"</a>
+<a class="news-video-metin" href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">Tecavüzcüsünün kafasını kesip köy meydanına atan Nevin Yıldırım merak edilen her şeyi Habertürk'e...</a>
+</div>
+</div>
+<div class="NewsGaleriGaleriLink"><a href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">Videoyu izlemek için tıklayınız</a></div>
+</div>
+</div>
+<!-- ilgili video } -->
+</div>
+<span id="news-detail-body">
+<div><span style="color: #ff0000;"><strong>AJANS HABERTÜRK ANTALYA TEMSİLCİSİ TEKİN ATAY'IN ÖZEL <a aid="170962" class="LinkBodyKeywords" href="/etiket/röportaj">RÖPORTAJ</a>I</strong></span><br/><br/><a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">Tecavüz</a>cüsünün kafasını kesip köy meydanına atan Nevin Yıldırım merak edilen her şeyi Habertürk'e anlattı:"Öyle iddia edildiği gibi bir gönül ilişkimiz kesinlikle yoktu. Ondan nefret ediyordum ama kurtulamıyordum. Defalarca intiharı denedim Çıkış yolu bulamadım." "Karnımdaki bebeğin cinsiyetinin erkek olduğu belirlendi. Gelecek ay doğum yapacağım. Bebeği bir kez bile emzirmek istemiyorum. Eğer emzirirsem kopamamaktan da korkuyorum ama başka çarem yok."<br/><br/><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay"><img alt="" height="31" src="http://www.haberturk.com/images/galeri_icon.gif" width="34"/></a> <a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay" style="font-size: 16px; font-weight: bold; color: #FF0000; text-decoration: underline;">GÖRÜNTÜLER İÇİN TIKLAYINIZ! DİKKAT (+18)</a></div>
+<div></div>
+<div><a href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197"><img alt="" height="31" src="http://www.haberturk.com/images/video_icon.gif" width="34"/></a> <a href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197" style="font-size: 16px; font-weight: bold; color: #FF0000; text-decoration: underline;">Video için tıklayınız...</a><br/><br/> HABERTÜRK, kendisine silah zoruyla <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a>  edip hamile bıraktığını  ileri sürdüğü adamı av  tüfeğiyle öldürdükten sonra kafasını keserek köy  meydanına atan Nevin  Yıldırım ile <a aid="11778" class="LinkBodyKeywords" href="/etiket/cezaevi">cezaevi</a>nde görüştü. Genç kadın,  yaşadıklarını ve cinayeti nasıl  işlediğini olaydan 48 gün sonra ilk  kez, <a aid="11778" class="LinkBodyKeywords" href="/etiket/cezaevi">cezaevi</a>nde kendisini ziyaret  eden Habertürk Antalya Temsilcisi  Tekin Atay'a anlattı. İşte <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a>e uğramış karnında tecüvüz bebeği  taşıyan bir mağdur,  çocuklarından ayrılmanın acısını çeken bir anne,  çok sevdiği kocasından uzak kalan bir kadın ama aynı zamanda vahşi bir  cinayet işleyen bir katilin  herkesin merak ettiği sorulara verdiği  cevaplar: <br/> <br/> <strong>'SENİN ADINI ÇIKARIRIM'</strong><br/> "Yaklaşık 2 yıl önce Polatlı'ya pancar çapasına gitmiştik.  Kayınbiraderimle birlikte çalışıyorduk. Nurettin Gider işçi çavuşuydu  ama sürekli yardım etme bahanesiyle yanımıza geliyor ve bana  yakınlaşmaya çalışıyordu. Kayınbiraderime, ‘Bu adam gelip bize yardım  etmesin, biz işimizi yaparız' dedim. Nurettin bunu duyunca bana, ‘Kızım  ben senin kocanın halasıyla evliyim. Akrabayız. Sen niye rahatsız  oluyorsun?' dedi. Ben de milletin yanlış anlayabileceğini söyledim.  Bunun üzerine beni, 'Senin adını çıkarırım. Benimle yattığını söylerim.  Millet sana değil bana inanır, rezil olursun' diye tehdit etti."<br/> <br/><strong>'DEDİĞİNİ YAPAN BİR PSİKOPAT'</strong><br/> "Nurettin, dediğini yapan bir yapıya sahipti. Tam bir psikopattı. Onunla  iyi geçinmezsem gerçekten beni rezil edeceğini biliyordum. Köye  döndükten sonra telefonla arayıp benden hoşlandığını ve benimle birlikte  olmak istediğini söyleyip tacize başladı. İstediklerini yapmazsam  çocuklarımın ve kocamın kafasına sıkacağını söylüyordu. Hem adımın  çıkmasından, hem de Nurettin'in aileme zarar vermesinden çok  korkuyordum."<br/> <br/><strong>'GECE YARISI  EVE GİRDİ'</strong><br/> "Eşim 18 Ocak 2012'de Antalya'ya çalışmaya gitti. İki katlı evin üst  katında ben, alt katında ise kayınpederim oturuyordu. Eşim gittikten  birkaç gün sonra gece uyurken Nurettin evime geldi. Alkollüydü ve elinde  tabanca vardı. Evimden gitmesini istedim ama bana tokat attı. Alt  kattaki kayınpederim duymasın diye çığlık bile atamadım. Çocuklarımı  öldürmekle tehdit edip ilk kez o gece bana <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a> etti."<br/> <br/><strong> 'ANNE ELLERİNE NE OLDU'</strong><br/> "Olay gecesi köyde düğün vardı. Nurettin arayıp geleceğini söyledi.  ‘Gelme' dedim ama dinlemedi. Eve çıkmayacağını söyleyip benim aşağı  inmemi istedi. Kabul etmedim, ‘Çocuğum uyuyor inemem' dedim ve gitmesi  için yalvardım. Gitmedi ve eve tırmanmaya başladı. Yine bana <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a>  edeceğini biliyordum. Eve girip tüfeği aldım ve ateş ettim. Bu sırada  tabancasını çıkardı ve damdan düştü. Çok ağır küfürler etmeye başladı ve  beni sağlam kışkırttı. Beni vuracağını da düşünerek birkaç el daha ateş  ettim. Yanına gittiğimde ölmüştü. O güne kadar bana yaptıkları aklıma  geldi ve şuurumu kaybettim. Kafasını kesip köy meydanına atmış ve eve  gelip kapının önünde oturmuşum. Henüz 6 yaşında olan kızım yanıma  gelince kanlı ellerimi gördü ve ‘Anne ellerine ne oldu' dedi. O anda  aklım başıma gelmeye başladı.<br/> <br/><span style="color: #ff0000;"><strong>'Ya anlelik duygum ağır basarsa'</strong></span><br/> "Karnımdaki bebeğin cinsiyetinin erkek olduğu belirlendi. Kasım ayı  başında doğum yapacağım. Bebeği bir kez bile emzirmek istemiyorum. Eğer  emzirirsem ondan kopamayacağımı düşünüyorum. Bu bebeğe her baktığımda,  öldürdüğüm kişiyi yaşattığımı ve ölmemiş gibi halen beni takip ettiğini  düşüneceğim. Bu yüzden doğar doğmaz devlet alsın ve evlatlık versin  istiyorum. Doğumdan sonra annelik duygumun ağır basmasından ve bebekten  kopamamaktan da korkuyorum ama başka çarem yok."<br/> <br/> <strong>'UYURKEN FOTOĞRAF ÇEKMİŞ'</strong><br/> "Nurettin bazı geceler alkollü halde evime  geliyordu. Silahı çıkarıp  istediğini yapıyordu. Bazen ayakta  duramayacak kadar sarhoş olduğunda  ilişkiye girmeden ikna edip  gönderiyordum ama her zaman karşı koymak  mümkün değildi. Ters bir laf  söylediğimde gözlerini adeta kan bürüyordu  ve beni dövüyordu. Ne zaman  ve nasıl yaptığını bilmiyorum ama uyurken  fotoğraflarımı çekmiş.  Bunları da eşime ve herkese göstereceğini  söyleyip tehditlerini  sürdürüyordu. Fotoğrafları bana hiç göstermedi,  sadece cinayetten sonra  savcılıkta gördüm. Kocamdan bir tokat bile  yemedim ama Nurettin'den  çok dayak yedim."<br/> <br/> <strong>'SENİ DOĞURTACAĞIM'</strong><br/> "Hamile kaldığımı  anlayınca doktora gittim.  Bebek 2 aylıktı. Kürtaj  istedim ama bunun  için eşimin de imzası  gerekiyormuş. Bebeği  aldıramadım. Hamile  olduğumu Nurettin'e söyledim.  ‘Sakın aldırma, o  bebeği doğuracaksın.  Seni hem süründüreceğim hem de  doğurtacağım' dedi.  Çok çaresizdim.  Peşimi bırakması için Nurettin'e  defalarca yalvardım.  Ama dinlemedi."<br/> <br/> <strong>'KOCAMA MESAJ ATTI'</strong><br/> "Nasıl yapmış bilmiyorum ama Nurettin benim adıma bir cep telefonu   almış. O numaradan kocama, ‘Ben Nevin. İnşaattaki işçiler beni   kullanıyorlar. Seni artık sevmiyorum' şeklinde mesajlar atmış. Eşim beni   arayıp sorduğunda haberimin olmadığını söyledim. Ama telefon benim   adıma kayıtlıymış. Nurettin'in amacı, kocamla aramızı bozmaktı.   Bilmediğim, anlamadığım bir kini vardı. Özellikle kocama ve ailesine   karşı çok büyük kin duyuyordu. Nedenini bilmiyorum. Beni de bu yüzden   rezil etmek istiyordu."<br/> <br/><strong>'SEN AĞASIN, SEN PAŞASIN'</strong><br/> "Nurettin'in  huyuna gitmek için elimden geleni yaptım. Tek amacım  yaşadıklarımın  duyulmamasıydı. Bir şey istediğinde, ‘Sen ağasın,  paşasın, iyisin' gibi  mesajlar atıp oyalıyordum. Ama o bana yaptıklarını  herkese anlatmış.  Artık köyde dedikodu almış yürümüştü. İnsan içine  çıkamaz olmuştum.  Günlerimi evde yalnız başıma geçiriyor, ailemdekilerin  bile yüzüne  bakamaz olmuştum. Dedikodular benim kulağıma da geliyordu.  Nurettin,  bana gelmeden önce cinsel gücü artırıcı hap içtiğini  anlatıyormuş  herkese. Bu çok ağırıma gitti."<br/> <br/><strong>ÇIKIŞ YOLU BULAMADIM</strong><br/> "Öyle iddia  edildiği gibi bir gönül ilişkimiz kesinlikle yoktu. Zaten  sevgi olsa  sonu böyle mi biterdi? Nurettin'den nefret ediyordum ama   kurtulamıyordum. Adım çıkacak, aileme zarar verecek korkusuyla her geçen   gün daha kötü günler geçiriyordum. Defalarca intiharı denedim, çok   sayıda ilaç içtim ama ölmedim. Bir yandan çocuklarım ve kocamı   düşünüyordum, bir yandan yaşadıklarımı... Çıkış yolu bulamadım."<br/> <br/><strong>KAYINPEDERİM SORDU</strong><br/> "Olaydan kısa süre önce kayınpederim bana dedikoduları sordu. Ağlayarak   ‘yalan' dedim. Yaşadıklarımı anlatsam bana inanmayabilirdi. Ailem de,   kocam da inanmayabilirdi ve işte o zaman mahvolurdum."<br/><br/> <br/> <br/> <br/></div> </span>
+</div>]
+>>> span[0]
+<div class="body clearfix" id="news-detail-body">
+<div class="image clearfix" style="position:relative;">
+<div id="KaydedildiMesaji">
+<div id="TopMembersZone3">
+<div class="kaydedilemediMesajiTxt">
+<img alt="Onaylanmadı" class="mesajKapatBtn" height="14" src="/images/onaylanmadi.gif" width="14"/> Bu haberi favori listenize eklemek için 
+		<a alt="Üye Girişi" class="flyOutOpener" href="javascript:;" id="login-link" style="color: #e50000; font-weight:bold;">üyelik girişi</a> yapmalısınız. Üye değilseniz <a alt="Üye Ol" class="flyout-open" href="/uyelik" style="color: #e50000; font-weight:bold;" target="_blank">tıklayın.</a>
+</div>
+<div class="flyout-box">
+<div class="wrap">
+<div id="FavEkleMemberLoginProcessTxt"></div>
+<div class="MemberLoginTxt">
+<span style="float: left">Habertürk'e </span> <a href="#" onclick="login('facebook'); return false;" style="color: #324878; font-weight:bold; padding-left: 2px; " title="Facebook ile hızlı bağlanın"> facebook </a> veya <br/><a href="#" onclick="login('twitter'); return false;" style="color: #48AECC; font-weight:bold; padding-left: 2px; " title="Twitter ile hızlı bağlanın"> twitter </a> hesabınızdan hızlı
+				bağlantı yapabileceğiniz gibi e-posta hesabınızla da 
+				<a href="/uyelik" style="color: #c60505; font-weight:bold;">yeni üyelik</a> yapabilirsiniz.
+			</div>
+<div class="MemberLoginForm">
+<label>E-Posta</label>
+<input class="MemberLoginInput" id="FavEkleMemberLoginUserName" type="text"/>
+<label>Şifre</label>
+<input class="MemberLoginInput" id="FavEkleMemberLoginPassword" type="password"/>
+<input class="FavEkleMemberLoginBtn" id="FavEkleMemberLoginBtn" type="submit" value=""/>
+</div>
+<div class="MemberLoginBottomText"><a href="/uyelik/sifremi_hatirlat">E-Posta</a> veya <a href="/uyelik/sifremi_hatirlat">şifremi unuttum</a></div>
+<div class="clear_both"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	HTUyelik.Init(786281);
+	$("#KaydedildiMesaji .flyOutOpener").click(function(){ 							
+		$("#KaydedildiMesaji .flyout-box").toggle();
+	});
+</script>
+</div>
+<img alt="Tecavüzcüsünün kafasını kesip köy meydanına atan Nevin Yıldırım merak edilen her şeyi Habertürk'e anlattı..." class="news-image" src="http://im.haberturk.com/2012/10/18/786281_detay.jpg?1350546630"/>
+<a href="javascript:;" onclick="FavorilereEkle(HaberID)" style=" position: absolute; top:267px; right:0px;" title="Favorilerime Ekle"><img alt="Sonra Oku" height="32" id="favorilereEkleBtn" src="/images/uye_profil/favorilere_ekle_btn.png" width="38"/></a>
+<ul class="share-buttons clearfix" style="width:288px; border: 1px solid #cacbcf;">
+<li class="twit-share-haberdetay">
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.haberturk.com%2Fgundem%2Fhaber%2F786281-emzirirsem-kopamam-diye-korkuyorum&amp;via=haberturk&amp;count=none&amp;text=Emzirirsem%20kopamam%20diye%20korkuyorum%21%20-%20Habert%C3%BCrk" style="width:55px; height:20px;"></iframe>
+</li>
+<li class="google-plus-one-haberdetay">
+<g:plusone count="true" href="http://www.haberturk.com/gundem/haber/786281-emzirirsem-kopamam-diye-korkuyorum" size="medium"></g:plusone>
+</li>
+<li class="facebook-like-haberdetay">
+<a name="fb_share" share_url="http://www.haberturk.com/gundem/haber/786281-emzirirsem-kopamam-diye-korkuyorum" type="button_count">Paylaş</a><script src="http://static.ak.fbcdn.net/connect.php/tr_TR/js/FB.Share" type="text/javascript"></script>
+</li>
+<li style="float: left; width:18px; text-align: center; padding: 6px 0px 0px 4px; ">
+<a href="javascript:;" onclick="Gonder(HaberID)"><img alt="Gönder" height="12" src="/images/zarf.gif" width="17"/></a>
+</li>
+</ul>
+<!-- ilgili galeri { -->
+<div class="NewsCommentMain">
+<div class="NewsGaleriMain">
+<div class="NewsGaleriHeader"><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay" title="İlgili Foto Galeri">İlgili Foto Galeri</a></div>
+<div class="NewsGaleriPhotos">
+<a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay"><img src="http://im.haberturk.com/galeri/2012/10/18/417207/28530ff19490219f15dee9a0c3318a56_120.jpg"/></a><a class="NewsGaleriListCent" href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay/1/2"><img src="http://im.haberturk.com/galeri/2012/10/18/417207/57357d4995946f73a846b1d0f34818ce_120.jpg"/></a><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay/1/3"><img src="http://im.haberturk.com/galeri/2012/10/18/417207/4990d0ed1750c7295a37b0671b817460_120.jpg"/></a> </div>
+<div class="NewsGaleriTitle"><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay">Türkiye'nin konuştuğu olay</a></div>
+<div class="NewsGaleriGaleriLink"><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay">Galeriye gitmek için tıklayınız</a></div>
+</div>
+</div>
+<!-- ilgili galeri } -->
+<!-- ilgili video { -->
+<div class="NewsCommentMain">
+<div class="NewsGaleriMain">
+<div class="NewsGaleriHeader"><a title="İlgili Video">İlgili Video</a></div>
+<div class="NewsGaleriExcerpt clearfix">
+<a class="NewsGaleriVideos" href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">
+<img height="54" src="http://mo.htimg.net/video/2012/10/18/D0695436EFA30183C46EFF0D2E28B0BC_k.jpg?v=1350546613" width="80"/></a>
+<div class="NewsGaleriExcerptWrap">
+<a class="news-video-title" href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">"O bebeği emzirmem"</a>
+<a class="news-video-metin" href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">Tecavüzcüsünün kafasını kesip köy meydanına atan Nevin Yıldırım merak edilen her şeyi Habertürk'e...</a>
+</div>
+</div>
+<div class="NewsGaleriGaleriLink"><a href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197">Videoyu izlemek için tıklayınız</a></div>
+</div>
+</div>
+<!-- ilgili video } -->
+</div>
+<span id="news-detail-body">
+<div><span style="color: #ff0000;"><strong>AJANS HABERTÜRK ANTALYA TEMSİLCİSİ TEKİN ATAY'IN ÖZEL <a aid="170962" class="LinkBodyKeywords" href="/etiket/röportaj">RÖPORTAJ</a>I</strong></span><br/><br/><a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">Tecavüz</a>cüsünün kafasını kesip köy meydanına atan Nevin Yıldırım merak edilen her şeyi Habertürk'e anlattı:"Öyle iddia edildiği gibi bir gönül ilişkimiz kesinlikle yoktu. Ondan nefret ediyordum ama kurtulamıyordum. Defalarca intiharı denedim Çıkış yolu bulamadım." "Karnımdaki bebeğin cinsiyetinin erkek olduğu belirlendi. Gelecek ay doğum yapacağım. Bebeği bir kez bile emzirmek istemiyorum. Eğer emzirirsem kopamamaktan da korkuyorum ama başka çarem yok."<br/><br/><a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay"><img alt="" height="31" src="http://www.haberturk.com/images/galeri_icon.gif" width="34"/></a> <a href="http://galeri.haberturk.com/gundem/galeri/417207-turkiyenin-konustugu-olay" style="font-size: 16px; font-weight: bold; color: #FF0000; text-decoration: underline;">GÖRÜNTÜLER İÇİN TIKLAYINIZ! DİKKAT (+18)</a></div>
+<div></div>
+<div><a href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197"><img alt="" height="31" src="http://www.haberturk.com/images/video_icon.gif" width="34"/></a> <a href="http://video.haberturk.com/haber/video/o-bebegi-emzirmem/68197" style="font-size: 16px; font-weight: bold; color: #FF0000; text-decoration: underline;">Video için tıklayınız...</a><br/><br/> HABERTÜRK, kendisine silah zoruyla <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a>  edip hamile bıraktığını  ileri sürdüğü adamı av  tüfeğiyle öldürdükten sonra kafasını keserek köy  meydanına atan Nevin  Yıldırım ile <a aid="11778" class="LinkBodyKeywords" href="/etiket/cezaevi">cezaevi</a>nde görüştü. Genç kadın,  yaşadıklarını ve cinayeti nasıl  işlediğini olaydan 48 gün sonra ilk  kez, <a aid="11778" class="LinkBodyKeywords" href="/etiket/cezaevi">cezaevi</a>nde kendisini ziyaret  eden Habertürk Antalya Temsilcisi  Tekin Atay'a anlattı. İşte <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a>e uğramış karnında tecüvüz bebeği  taşıyan bir mağdur,  çocuklarından ayrılmanın acısını çeken bir anne,  çok sevdiği kocasından uzak kalan bir kadın ama aynı zamanda vahşi bir  cinayet işleyen bir katilin  herkesin merak ettiği sorulara verdiği  cevaplar: <br/> <br/> <strong>'SENİN ADINI ÇIKARIRIM'</strong><br/> "Yaklaşık 2 yıl önce Polatlı'ya pancar çapasına gitmiştik.  Kayınbiraderimle birlikte çalışıyorduk. Nurettin Gider işçi çavuşuydu  ama sürekli yardım etme bahanesiyle yanımıza geliyor ve bana  yakınlaşmaya çalışıyordu. Kayınbiraderime, ‘Bu adam gelip bize yardım  etmesin, biz işimizi yaparız' dedim. Nurettin bunu duyunca bana, ‘Kızım  ben senin kocanın halasıyla evliyim. Akrabayız. Sen niye rahatsız  oluyorsun?' dedi. Ben de milletin yanlış anlayabileceğini söyledim.  Bunun üzerine beni, 'Senin adını çıkarırım. Benimle yattığını söylerim.  Millet sana değil bana inanır, rezil olursun' diye tehdit etti."<br/> <br/><strong>'DEDİĞİNİ YAPAN BİR PSİKOPAT'</strong><br/> "Nurettin, dediğini yapan bir yapıya sahipti. Tam bir psikopattı. Onunla  iyi geçinmezsem gerçekten beni rezil edeceğini biliyordum. Köye  döndükten sonra telefonla arayıp benden hoşlandığını ve benimle birlikte  olmak istediğini söyleyip tacize başladı. İstediklerini yapmazsam  çocuklarımın ve kocamın kafasına sıkacağını söylüyordu. Hem adımın  çıkmasından, hem de Nurettin'in aileme zarar vermesinden çok  korkuyordum."<br/> <br/><strong>'GECE YARISI  EVE GİRDİ'</strong><br/> "Eşim 18 Ocak 2012'de Antalya'ya çalışmaya gitti. İki katlı evin üst  katında ben, alt katında ise kayınpederim oturuyordu. Eşim gittikten  birkaç gün sonra gece uyurken Nurettin evime geldi. Alkollüydü ve elinde  tabanca vardı. Evimden gitmesini istedim ama bana tokat attı. Alt  kattaki kayınpederim duymasın diye çığlık bile atamadım. Çocuklarımı  öldürmekle tehdit edip ilk kez o gece bana <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a> etti."<br/> <br/><strong> 'ANNE ELLERİNE NE OLDU'</strong><br/> "Olay gecesi köyde düğün vardı. Nurettin arayıp geleceğini söyledi.  ‘Gelme' dedim ama dinlemedi. Eve çıkmayacağını söyleyip benim aşağı  inmemi istedi. Kabul etmedim, ‘Çocuğum uyuyor inemem' dedim ve gitmesi  için yalvardım. Gitmedi ve eve tırmanmaya başladı. Yine bana <a aid="312" class="LinkBodyKeywords" href="/etiket/tecavüz">tecavüz</a>  edeceğini biliyordum. Eve girip tüfeği aldım ve ateş ettim. Bu sırada  tabancasını çıkardı ve damdan düştü. Çok ağır küfürler etmeye başladı ve  beni sağlam kışkırttı. Beni vuracağını da düşünerek birkaç el daha ateş  ettim. Yanına gittiğimde ölmüştü. O güne kadar bana yaptıkları aklıma  geldi ve şuurumu kaybettim. Kafasını kesip köy meydanına atmış ve eve  gelip kapının önünde oturmuşum. Henüz 6 yaşında olan kızım yanıma  gelince kanlı ellerimi gördü ve ‘Anne ellerine ne oldu' dedi. O anda  aklım başıma gelmeye başladı.<br/> <br/><span style="color: #ff0000;"><strong>'Ya anlelik duygum ağır basarsa'</strong></span><br/> "Karnımdaki bebeğin cinsiyetinin erkek olduğu belirlendi. Kasım ayı  başında doğum yapacağım. Bebeği bir kez bile emzirmek istemiyorum. Eğer  emzirirsem ondan kopamayacağımı düşünüyorum. Bu bebeğe her baktığımda,  öldürdüğüm kişiyi yaşattığımı ve ölmemiş gibi halen beni takip ettiğini  düşüneceğim. Bu yüzden doğar doğmaz devlet alsın ve evlatlık versin  istiyorum. Doğumdan sonra annelik duygumun ağır basmasından ve bebekten  kopamamaktan da korkuyorum ama başka çarem yok."<br/> <br/> <strong>'UYURKEN FOTOĞRAF ÇEKMİŞ'</strong><br/> "Nurettin bazı geceler alkollü halde evime  geliyordu. Silahı çıkarıp  istediğini yapıyordu. Bazen ayakta  duramayacak kadar sarhoş olduğunda  ilişkiye girmeden ikna edip  gönderiyordum ama her zaman karşı koymak  mümkün değildi. Ters bir laf  söylediğimde gözlerini adeta kan bürüyordu  ve beni dövüyordu. Ne zaman  ve nasıl yaptığını bilmiyorum ama uyurken  fotoğraflarımı çekmiş.  Bunları da eşime ve herkese göstereceğini  söyleyip tehditlerini  sürdürüyordu. Fotoğrafları bana hiç göstermedi,  sadece cinayetten sonra  savcılıkta gördüm. Kocamdan bir tokat bile  yemedim ama Nurettin'den  çok dayak yedim."<br/> <br/> <strong>'SENİ DOĞURTACAĞIM'</strong><br/> "Hamile kaldığımı  anlayınca doktora gittim.  Bebek 2 aylıktı. Kürtaj  istedim ama bunun  için eşimin de imzası  gerekiyormuş. Bebeği  aldıramadım. Hamile  olduğumu Nurettin'e söyledim.  ‘Sakın aldırma, o  bebeği doğuracaksın.  Seni hem süründüreceğim hem de  doğurtacağım' dedi.  Çok çaresizdim.  Peşimi bırakması için Nurettin'e  defalarca yalvardım.  Ama dinlemedi."<br/> <br/> <strong>'KOCAMA MESAJ ATTI'</strong><br/> "Nasıl yapmış bilmiyorum ama Nurettin benim adıma bir cep telefonu   almış. O numaradan kocama, ‘Ben Nevin. İnşaattaki işçiler beni   kullanıyorlar. Seni artık sevmiyorum' şeklinde mesajlar atmış. Eşim beni   arayıp sorduğunda haberimin olmadığını söyledim. Ama telefon benim   adıma kayıtlıymış. Nurettin'in amacı, kocamla aramızı bozmaktı.   Bilmediğim, anlamadığım bir kini vardı. Özellikle kocama ve ailesine   karşı çok büyük kin duyuyordu. Nedenini bilmiyorum. Beni de bu yüzden   rezil etmek istiyordu."<br/> <br/><strong>'SEN AĞASIN, SEN PAŞASIN'</strong><br/> "Nurettin'in  huyuna gitmek için elimden geleni yaptım. Tek amacım  yaşadıklarımın  duyulmamasıydı. Bir şey istediğinde, ‘Sen ağasın,  paşasın, iyisin' gibi  mesajlar atıp oyalıyordum. Ama o bana yaptıklarını  herkese anlatmış.  Artık köyde dedikodu almış yürümüştü. İnsan içine  çıkamaz olmuştum.  Günlerimi evde yalnız başıma geçiriyor, ailemdekilerin  bile yüzüne  bakamaz olmuştum. Dedikodular benim kulağıma da geliyordu.  Nurettin,  bana gelmeden önce cinsel gücü artırıcı hap içtiğini  anlatıyormuş  herkese. Bu çok ağırıma gitti."<br/> <br/><strong>ÇIKIŞ YOLU BULAMADIM</strong><br/> "Öyle iddia  edildiği gibi bir gönül ilişkimiz kesinlikle yoktu. Zaten  sevgi olsa  sonu böyle mi biterdi? Nurettin'den nefret ediyordum ama   kurtulamıyordum. Adım çıkacak, aileme zarar verecek korkusuyla her geçen   gün daha kötü günler geçiriyordum. Defalarca intiharı denedim, çok   sayıda ilaç içtim ama ölmedim. Bir yandan çocuklarım ve kocamı   düşünüyordum, bir yandan yaşadıklarımı... Çıkış yolu bulamadım."<br/> <br/><strong>KAYINPEDERİM SORDU</strong><br/> "Olaydan kısa süre önce kayınpederim bana dedikoduları sordu. Ağlayarak   ‘yalan' dedim. Yaşadıklarımı anlatsam bana inanmayabilirdi. Ailem de,   kocam da inanmayabilirdi ve işte o zaman mahvolurdum."<br/><br/> <br/> <br/> <br/></div> </span>
+</div>
+<html>

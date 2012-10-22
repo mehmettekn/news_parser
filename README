@@ -1,0 +1,17 @@
+#######
+
+This is a web application to parse XML feeds obtained from
+popular news websites. XML feeds are parsed with a schedule
+determined by a cron job. News posts are visualized in the
+frontpage and ordered by pubDate.
+
+The application is written in Python and supported by Google's
+webapp2 infrastructure.
+
+The website is live at mehmettekn.appspot.com
+
+#######
+
+Mehmet Tekin, 2012.
+
+######

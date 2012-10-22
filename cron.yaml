@@ -1,0 +1,5 @@
+cron:
+
+- description: parser
+  url: /parser
+  schedule: every 10 minutes
