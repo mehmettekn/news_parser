@@ -6,10 +6,49 @@ import webapp2
 import jinja2
 import logging
 
+from bs4 import BeautifulSoup
+from xml.dom import minidom
+from collections import namedtuple
+from time import strptime, mktime
+from datetime import datetime, timedelta
+from dateutil import parser
+
 from google.appengine.ext import db
+from google.appengine.api import urlfetch
+from google.appengine.api import memcache
 
 jinja_environment = jinja2.Environment(autoescape=True,
     loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')))
+
+def get_posts(update = False):
+    q = db.GqlQuery("SELECT * FROM Post ORDER BY pubDate DESC limit 20")
+    mc_key = "POSTS"
+    posts, age = age_get(mc_key)
+    if update or posts is None:
+        posts = list(q)
+        age_set(mc_key, posts)
+    logging.error("DB QUERY!!")  
+    return posts, age    
+
+def age_set(key, val):
+    save_time = datetime.utcnow()
+    memcache.set(key, (val, save_time))
+
+def age_get(key):
+    r = memcache.get(key)
+    if r:
+        val, save_time = r
+        age = (datetime.utcnow() - save_time).total_seconds()
+    else:
+        val, age = None, 0
+    return val, age
+
+def age_str(age):
+    s = 'queried %s seconds ago'
+    age = int(age)
+    if age == 1:
+        s = s.replace('seconds', 'second')
+    return s % age
 
 def render_str(template, **params):
 	t = jinja_environment.get_template(template)

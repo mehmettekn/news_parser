@@ -1,10 +1,13 @@
 from main import *
-from post import *
 
-class FrontPageHandler(BaseHandler):
+class Channel(BaseHandler):
     def get(self):
-        posts = db.GqlQuery("SELECT * FROM Post ORDER BY pubDate DESC limit 20")
-        logging.error("DB QUERY!!")
-        self.render('frontpage.html', posts = posts)
+        self.render('channel.html')
 
-app = webapp2.WSGIApplication([('/', FrontPageHandler)], debug=True)
+class FrontPageHandler(BaseHandler):   
+    def get(self):
+        posts, age = get_posts()        
+        self.render('frontpage.html', posts = posts, age = age_str(age))
+
+app = webapp2.WSGIApplication([('/', FrontPageHandler),
+                               ('/channel', Channel)], debug=True)
