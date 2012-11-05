@@ -1,0 +1,37 @@
+from cron import fetch_posts
+from models.stats_data import Data
+from models.post import Post
+from models.urls import urllist
+
+
+def count_posts(newstype, source, hours, minutes):
+    count = (Post.all().filter('newstype =', newstype).filter(src = source)
+             .filter('pubDate >', datetime.now() - timedelta(hours = hours))
+             .filter('pubDate >', datetime.now() - timedelta(minutes = minutes))
+             .count())
+    return count
+    
+
+
+def create_data(newstype, hours, limit = None,  ):
+    for minute in range(0, 60, 5):    
+        count = count_posts(None, None, 1, minute)
+        data = Data(value = count, newstype = None,
+                    src = None, datetime = datetime)
+        data.put()
+        for newstype in urllist:
+            count = count_posts(newstype, None, 1, minute)     
+            datetime = datetime.now() - timedelta(minutes = minute)
+            data = Data(value = count, newstype = newstype,
+                        src = None, datetime = datetime)
+            data.put()
+
+            for src in urllist['news_urls']:
+            
+                count = count_posts(newstype, src, 1, minute)
+                datetime = datetime.now() - timedelta(minutes = minute)
+                data = Data(value = count, newstype = newstype,
+                            src = src, datetime = datetime)
+                data.put()
+
+ 

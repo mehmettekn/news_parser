@@ -3,5 +3,6 @@ __all__ = [
     'news_parser',
     'health_parser',
     'sports_parser',
-    'tech_parser'
+    'tech_parser',
+    'rssparser'
     ]
