@@ -1,0 +1,33 @@
+from google.appengine.ext import db
+from main import age_get, age_set, render_str
+
+import logging
+
+def get_posts(update = False):
+    q = db.GqlQuery("SELECT * FROM Post ORDER BY pubDate DESC limit 120")
+    mc_key = "POSTS"
+    posts, age = age_get(mc_key)
+    if update or posts is None:
+        posts = list(q)
+        age_set(mc_key, posts)
+    logging.error("DB QUERY!!")  
+    return posts, age    
+
+def post_key(name = 'default'):
+    return db.Key.from_path('posts', name)
+
+class Post(db.Model):
+    title = db.TextProperty()
+    description = db.TextProperty()
+    pubDate = db.DateTimeProperty()
+    link = db.TextProperty()
+    content = db.BlobProperty()
+    image = db.LinkProperty()
+    src = db.StringProperty(unicode)
+    srckey = db.IntegerProperty()
+    newstype = db.StringProperty()
+    cluster_id = db.ReferenceProperty()
+    tokens_list = db.ListProperty(unicode)    
+    
+    def render(self):
+        return render_str("post.html", p = self)
