@@ -1,0 +1,104 @@
+/* Ticker Styling */
+.ticker-wrapper.has-js {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 20px;
+	width: 250px;
+	height: 27px;
+	display: block;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	font-size: 1.10em;
+    font-family:Helvetica;
+}
+.ticker {
+	width: 250px;
+	height: 27px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	
+}
+.ticker-title {
+	padding-top: 9px;
+	color: #990000;
+	font-weight: bold;
+
+	text-transform: uppercase;
+}
+.ticker-content {
+	margin: 0px;
+	padding-top: 9px;
+	position: absolute;
+	color: #CFCFCF;
+	font-weight: bold;
+
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.2em;
+}
+.ticker-content:focus {
+	none;
+}
+.ticker-content a {
+	text-decoration: none;	
+	color: #1F527B;
+}
+.ticker-content a:hover {
+	text-decoration: underline;	
+	color: #0D3059;
+}
+.ticker-swipe {
+	padding-top: 9px;
+	position: absolute;
+	top: 0px;
+	background-color: #1A1A1A;
+	display: block;
+	width: 450px;
+	height: 23px; 
+}
+.ticker-swipe span {
+	margin-left: 1px;
+	background-color: #1A1A1A;
+	border-bottom: 1px solid #1F527B;
+	height: 12px;
+	width: 7px;
+	display: block;
+}
+
+.js-hidden {
+	display: none;
+}
+.no-js-news {
+	padding: 10px 0px 0px 45px; 
+	color: #F8F0DB;
+}
+.left .ticker-swipe {
+	/*left: 80px;*/
+}
+.left .ticker-controls, .left .ticker-content, .left .ticker-title, .left .ticker {
+    float: left;
+}
+.left .ticker-controls {
+    padding-left: 6px;
+}
+.right .ticker-swipe {
+	/*right: 80px;*/
+}
+.right .ticker-controls, .right .ticker-content, .right .ticker-title, .right .ticker {
+    float: right;
+}
+.right .ticker-controls {
+    padding-right: 6px;
+}
+
+.DOWN {
+    color:red;
+}
+
+.UP {
+    color:green;
+}
+
+

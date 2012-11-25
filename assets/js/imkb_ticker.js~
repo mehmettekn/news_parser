@@ -1,0 +1,7 @@
+$(document).ready(function(){
+    $(function(){
+        console.log($('#imkb-ticker'));    
+        //$('#ticker-deneme').ticker();
+        $('#imkb-ticker').ticker();
+    });
+});

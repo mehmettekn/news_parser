@@ -1,0 +1,57 @@
+$(document).ready(function(){
+var imkb = {},
+    cache = {},
+    imkbString = '';
+
+var downSymbol = "▼",
+    upSymbol = "▲",
+    symbol = "";
+
+
+function loadJSON(){
+    $.get('/json/imkb_endeks', function(data){
+        alert("Data Loaded");
+        render(data);
+    }, "json");
+}
+        
+
+function render(obj){
+    console.log('render in process');
+    $.each(obj['ENDEKS'], function(key, value){
+        console.log(value.CLASS);     
+        if (value.CLASS == "DOWN"){
+            symbol = downSymbol;
+        }else{
+            symbol = upSymbol;
+        };
+                
+        imkbString += '\
+            <li>\
+                       <span class="imkb-ticker-name">' + value.NAME + '</span><span class="imkb-ticker-value">' + value.ASK + '</span><span class="' + value.CLASS +'">'+ symbol +'</span>\
+            </li>';
+    });
+   $('#imkb-ticker').html(imkbString);
+   //initTicker();
+}
+
+
+
+function initTicker(){   
+    $(function(){
+       console.log($('#imkb-ticker'));    
+       //$('#ticker-deneme').ticker();
+       $('#imkb-ticker').liscroll();
+    });
+}
+
+
+    loadJSON();
+
+});
+
+//initTicker();
+        
+
+
+

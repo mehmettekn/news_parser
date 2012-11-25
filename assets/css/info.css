@@ -1,0 +1,5 @@
+.ticker { margin:0; padding: 0; width: 100%; height: 40px; font-family: Arial, Helvetica; font-size: 30px; position: absolute; }
+	.ticker li { float:left; padding-right: 40px }
+	.up { color: #00FF00 }
+	.down { color: #FF0033 }
+	body, html { overflow: hidden }

@@ -1,0 +1,6 @@
+$(function(){
+    $('.news-list-item-button2').each(function(index){
+        $(this).frameWarp();
+    });
+});
+	

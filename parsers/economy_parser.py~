@@ -1,4 +1,4 @@
-from rssparser import *
+from parsers.rssparser import *
 
 class EconomyNewsParser(RssParser):
     def get(self):

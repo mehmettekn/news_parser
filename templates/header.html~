@@ -1,0 +1,46 @@
+<div id="banner-container">
+  <div id="top-banner">  
+    <div id="logo">portal haber</div>
+    <div id="login-area"></div>  
+  </div>
+  <div id="transparent-banner"></div>
+  <div id="info-banner">
+    <div id="main-datetime">
+    </div>
+    <div id="weather-ticker">
+       
+    </div>
+    <div id="piyasa-ticker">
+      <ul id="finance-info">
+      </ul>          
+    </div>     
+  </div>
+  <div id="ticker-banner"></div>  
+  
+  <div id="imkb-ticker-container">
+    <span id= "imkb-preloader" class="preloader"></span>    
+    <ul id="imkb-ticker">
+    </ul>
+  </div>
+  <div id="latest-ticker-container">
+    <span id="latest-preloader" class="preloader"></span>      
+    <ul id="latest-ticker">
+    </ul>
+  </div>
+</div>
+
+
+
+<link type="text/css" rel="stylesheet" href="/assets/css/ticker-style.css"/>  
+<link type="text/css" rel="stylesheet" href="/assets/css/liscroll.css"/>    
+<link type="text/css" rel="stylesheet" href="/assets/css/header.css"/>
+
+<script src="/assets/js/jquery-1.7.2.min.js"></script>
+<script src="/assets/js/jquery.ticker.js"></script>
+<script src="/assets/js/get_info.js"></script>
+<script src="/assets/js/info.js"></script>
+<script src="/assets/js/datetime.js"></script>
+<script src="/assets/js/liScroll.js"></script>
+<script src="/assets/js/endeks.js"></script>
+<script src="/assets/js/latest_news.js"></script>
+    

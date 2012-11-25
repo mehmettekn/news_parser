@@ -1,5 +1,15 @@
 <div class="post">
         
+    <table id='hop'>
+        <tr>        
+        <td class="post-heading">            
+            <a href={{p.link}} class="post-link" target="_blank" >{{p.title}}</a>
+        </td>       
+        </tr>    
+    </table>    
+
+
+
     <table id='one-column-emphasis'>    
         
     <colgroup>
@@ -7,10 +17,9 @@
     </colgroup>
 
       <tr>        
-                
-        <td class="post-heading">            
-            <a href={{p.link}} class="post-link" target="_blank" >{{p.title}}</a>
-        </td>       
+         <td class="post-content">
+           <a href={{p.link}} class="post-link"  target="_blank" >{{p.description | safe}}</a></td>        
+        
         
         
                 
@@ -27,11 +36,12 @@
         </td>
 
     </tr>
-    <table id='hop'>
-        <tr>        
-        <td class="post-content">
-           <a href={{p.link}} class="post-link"  target="_blank" >{{p.description | safe}}</a> 
-        </tr>    
+    <tr>
+        <td>
+           <a href={{p.link}} class="button2" id="b1">Haberi Görüntüle!</a>
+        </td>
+     </tr>
     </table>
 
+<script src="/assets/js/frame.js"></script>
 </div>

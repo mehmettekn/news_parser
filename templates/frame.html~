@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Frame Embed Page</title>
+        
+        <!-- The stylesheet -->
+        <link rel="stylesheet" href="/home/mehmettekn/news/assets/css/frame.css" />
+        
+        <style>
+
+        h1{
+            text-align:center;
+            margin-top:200px;
+            font-weight:normal;
+        }
+
+        #close{
+            display:block;
+            width:100px;
+            margin:20px auto;
+            text-align:center;
+        }
+        </style>
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="framePage">
+
+        <h1>This is frame.html</h1>
+
+        <a href="#" class="button2" id="close" onclick="frameWarp.hide();">Close Window</a>
+        
+    </body>
+</html>

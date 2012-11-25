@@ -1,0 +1,72 @@
+PiyasaDurumu["Etiket"].push("EUR/USD");
+
+var EUR = PiyasaDurumu["Deger"][1]["SON"],
+    USD = PiyasaDurumu["Deger"][2]["SON"],
+    EUR_CLASS = PiyasaDurumu["Deger"][1]["CLASS"],
+    USD_CLASS = PiyasaDurumu["Deger"][2]["CLASS"],   
+    EURUSD = 0,
+    EURUSD_CLASS = "";
+
+EURUSD = roundNumber(EUR/USD, 4)
+if(EUR_CLASS == "UP" && USD_CLASS == "UP"){
+    EURUSD_CLASS = "UP";
+}else if(EUR_CLASS == "DOWN" && USD_CLASS == "UP"){
+    EURUSD_CLASS = "DOWN";
+}else{
+    EURUSD_CLASS = "UP";
+};
+
+PiyasaDurumu["Deger"].push({"CLASS": EURUSD_CLASS, "SON":EURUSD})
+
+var downSymbol = "▼",
+    upSymbol = "▲";
+
+
+function roundNumber(rnum, rlength) {
+    var newnumber = Math.round(rnum*Math.pow(10, rlength))/Math.pow(10, rlength)
+    return newnumber
+};
+
+var financeString = '';
+$.each(PiyasaDurumu['Deger'], function(i, value){
+    if (PiyasaDurumu['Etiket'][i] == "IMKB")
+        value.SON = Math.round(value.SON);
+    if (value.CLASS == "DOWN"){
+        symbol = downSymbol;
+    }else{
+        symbol = upSymbol;
+    };
+         
+    financeString += '\
+        <li class="finance-info-wrap">\
+    		<div class="header">\
+			<span class="ticker-name">' + PiyasaDurumu['Etiket'][i] + '</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="' + value.CLASS +'">'+ value.SON +'</span><span class="'+ value.CLASS +'">&nbsp;&nbsp;' + symbol + '</span></div>\
+								</li>';
+});
+
+$('#finance-info').html(financeString);
+
+
+var weatherString = '',
+    googleQueryString = "http://www.google.com/search?q=weather+";
+
+$.each(HavaDurumu, function(i, value){
+    weatherString += '\
+        <li class="info-weather-wrap">\
+            <a href="'+ googleQueryString + value.city_name +'" class="text" target="_blank">\
+                <span class="city">' + value.city_name + '</span>\
+                <span class="degree">' + value.derece_yuksek + ' &#186;</span>\
+                <span class="stat">' + value.phrase + '</span>\
+            </a>\
+            <a href="'+ googleQueryString + value.city_name + '" class="wimage"><img src="http://www.haberturk.com' + value.image + '" /></a>\
+        </li>';
+});
+
+$('#weather-info').html(weatherString);
+
+$(function () {
+    $('#finance-info').ticker();
+
+});
+
+

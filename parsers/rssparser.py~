@@ -1,0 +1,124 @@
+from main import BaseHandler
+from models.urls import urllist, srcmap, no_image_url
+from models.post import Post, post_key, get_posts
+from models.tzinfo import GMT2
+from latest_news.news import generate_posts_json
+
+
+from bs3.BeautifulSoup import BeautifulStoneSoup, BeautifulSoup
+from dateutil import parser
+from xml.dom import minidom
+
+from google.appengine.ext import db
+from google.appengine.api import urlfetch
+from google.appengine.api import memcache
+
+from collections import namedtuple
+from datetime import datetime, tzinfo, timedelta
+
+import logging
+import lxml
+
+POST_LIMIT = 3
+
+class RssParser(BaseHandler):
+    def get_data(self, name, src):
+        try:        
+            _data = src.findAll(name)[0]  
+        except(IndexError):
+            _data = BeautifulSoup("No Data Received") 
+        data = _data.getText()
+        return data    
+            
+    def _parse_rss(self, urltype):
+        result = namedtuple('Result', ['title', 'description', 'link',
+                                       'content', 'image', 'pubDate',
+                                       'src', 'newstype', 'urlkey'])
+        results = []
+        for url in urllist[urltype]:            
+            try:                
+                _page_ = urlfetch.fetch(url)  
+            except urlfetch.DeadlineExceededError:
+                logging.error("DeadlineExceededError")
+                continue                
+            page = _page_.content                            
+            xml = BeautifulStoneSoup(page, convertEntities=BeautifulSoup.HTML_ENTITIES)           
+            posts = xml.findAll("item")[:POST_LIMIT]
+            urlkey = urllist[urltype][url]
+            source = srcmap[urlkey]                        
+            for post in posts:
+                newstype = urltype                
+                #title = self.get_data("title", post)
+                title = post.find("title").getText()                
+                _desc = post.find("description").getText()
+                #desc = post.find("description").getText()                
+                #desc = self.get_data("description", post)                
+                link = post.find("link").getText()         
+                try:
+                    image = BeautifulSoup(_desc, convertEntities=BeautifulSoup.HTML_ENTITIES).find('img')['src']
+                except(TypeError):                
+                    try:
+                        image = post.find("image").getText()
+                    except(AttributeError):
+                        try:
+                            image = post.find("ipimage").getText()
+                        except(AttributeError):                
+                            try:
+                                image = xml.find("image").find('url').getText()
+                                logging.error('bokllu resim')
+                            except(AttributeError):
+                                image = ''
+                desc = BeautifulSoup(_desc).find(text = True)
+                if not desc:
+                    desc = ""
+                    logging.info("Empty Desc")                
+                _pubDate_ = post.find("pubDate")
+                if not _pubDate_:
+                    _pubDate_ = post.find("pubdate")
+                try:
+                    pubDate = parser.parse(_pubDate_.getText())           
+                except (ValueError):
+                    logging.info("Auto pubDate added")                    
+                    pubDate = datetime.now()  
+                content = "no content yet" #add parsing for content later"
+                src = source      
+                urlkey = urllist[urltype][url]                
+                if link:                
+                    results.append(result(title, desc, link, content, image, pubDate, src, newstype, urlkey))
+                else: logging.info("no link")        
+        return results
+        
+    def parse_rss(self, urltype):
+        results = self._parse_rss(urltype)
+        update_flag = False
+        post_batch = []        
+        for r in results:
+            val1 = memcache.get(r.link)                  
+            val2 = memcache.get(r.image)
+            if val1 == None and val2 == None:
+                update_flag = True                
+                logging.info("New Post Entity Being Created")                
+                tokens = self.create_tokens(r)                
+                p = Post(parent = post_key(), title = r.title,
+                         description = r.description,
+                         link = r.link, content = r.content,
+                         image = r.image, pubDate = r.pubDate,
+                         src = r.src, tokens_list = tokens,
+                         newstype = r.newstype, srckey = r.urlkey)                
+                post_batch.append(p)
+                memcache.add(r.link, "True")
+                memcache.add(r.image, "True")
+            else: logging.info("Duplicate post avoided")
+        db.put(post_batch)        
+        get_posts(update = update_flag)
+        generate_posts_json(update = update_flag)
+
+    def tokenize_string(self, string, limit = 5):    
+        tokens = string.split()
+        tokens = list(token[:limit].lower() for token in tokens)        
+        return tokens
+            
+    def create_tokens(self, post, token_limit = 20):
+        string = post.title + post.description
+        tokens = self.tokenize_string(string)[:token_limit]
+        return tokens

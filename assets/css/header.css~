@@ -1,0 +1,81 @@
+
+#top-banner {
+    position:fixed;    
+    top:0px;
+    width:100%;
+    height:62px;
+    background:#1A1A1A;    
+    margin: 0;
+    padding: 0;
+    z-index: 9;    
+}
+
+
+#logo{
+    float:left;
+    font: 42px bold Helvetica;
+    padding-left:10px;
+    padding-top:5px;
+    color:#1570A6;
+}
+
+#main-datetime {
+    float: left;
+    padding-left: 12px;
+    padding-top: 4px;
+    font: 12 px Helvetica;
+
+}
+
+#transparent-banner {
+    position:fixed;
+    top:62px;
+    width:100%;
+    height:10px;
+    background:#2A2A2A;
+    opacity: 0.9;
+    z-index: 8;    
+}
+
+#piyasa-ticker {
+    position:fixed;
+    top:20px;
+    right: 0px;
+    z-index:7;
+}
+
+#main-datetime {
+    position:fixed;
+    top:0px;
+    right:27px;
+    z-index:9;
+    color:#CFCFCF;
+    padding:8px;
+    font-family:Helvetica;
+}
+
+#imkb-ticker-container {
+    width:100%;
+    position:absolute;
+    top:72px;
+    z-index:8;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1)));
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+#latest-ticker-container {
+    width:100%;
+    position:absolute;
+    z-index:7;
+    top:90px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,246,248,1)), color-stop(50%,rgba(216,225,231,1)), color-stop(51%,rgba(181,198,208,1)), color-stop(100%,rgba(224,239,249,1)));
+    border-bottom: 1px solid black;    
+}
+
+
+
+
+
+

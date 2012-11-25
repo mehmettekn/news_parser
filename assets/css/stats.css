@@ -22,7 +22,8 @@ body{
 
 #page{
 	width:960px;
-	margin:0 auto;
+    	
+    margin:0 auto;
 }
 
 #header{
@@ -136,13 +137,15 @@ body{
 ================================*/
 
 
-#plot{
-	height:400px;
-	margin:30px;
-	position:relative;
+#placeholder{
+	height:300px;
+	
+    width:600px;
+    
+   
 }
 
-#plot .preloader{
+#placeholder .preloader{
 	background: url('../img/preloader.gif') no-repeat center center;
 	position:absolute;
 	width:100%;
@@ -151,20 +154,6 @@ body{
 	top:0;
 }
 
-#plotTooltip{
-	position: absolute;
-	display: none;
-	border: 1px solid #a1d0f6;
-	padding: 2px 5px;
-	background-color: #c5e2f9;
-	color:#2a4f6d;
-	font-size:11px;
-	text-shadow:0 0 1px rgba(255,255,255,0.3);
-	
-	-moz-box-shadow:2px 2px 0 rgba(0,0,0,0.1),1px 1px 0 #fff;
-	-webkit-box-shadow:2px 2px 0 rgba(0,0,0,0.1),1px 1px 0 #fff;
-	box-shadow:2px 2px 0 rgba(0,0,0,0.1),1px 1px 0 #fff;
-}
 
 
 /*===============================
@@ -176,12 +165,13 @@ body{
 	font-size: 15px;
 	line-height: 34px;
 	padding: 0 15px;
+    margin:0 auto;
 }
 
 #page .section{
 	background: url("../img/sprite.png") repeat-x 0 -121px #FAFAFA;
 	border: 1px solid #D1D3D5;
-	min-height: 300px;
+	min-height: 360px;
 	margin: 40px 0;
 	overflow-x: hidden;
 	
@@ -195,48 +185,14 @@ body{
 }
 
 
-/*===============================
-*	Downtime styles:
-================================*/
+#choices  {
+    color:#575B63;
 
 
-#noDowntime{
-	color: #999999;
-	line-height: 160px;
-	text-align: center;
-	display:none;
-}
-
-.dtContainer{
-	color:#777;
-}
-
-.row{
-	border-bottom: 1px solid #DDDDDD;
-	overflow: hidden;
-	padding: 6px 0;
-}
-
-.row.ongoing{
-	color:#C30;
-}
-
-#downtimeData .row span{
-	float:left;
-}
-
-#downtimeData .row:first-child{
-	font-size:10px;
-}
-
-#downtimeData .from,
-#downtimeData .to{
-	margin-left: 10px;
-	width:40%;
-}
-
-#downtimeData{
-	margin: 50px 100px;
+   
+    padding: 30px;
+   
+    
 }
 
 
@@ -245,19 +201,11 @@ body{
 ================================*/
 
 
-#footer{
-	color:#777;
-	text-align:center;
-	font-size:11px;
-	padding-bottom:20px;
+#place {
+    width:960px;
+    margin: 0 auto;
 }
 
-a, a:visited {
-	color: #4EA0E2;
-	outline: none;
-	text-decoration: underline;
-}
-
-a:hover{
-	text-decoration:none;
+#table {
+    margin: 0 auto;
 }

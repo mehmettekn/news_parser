@@ -1,0 +1,16 @@
+<div id="banner-container">
+  <div id="top-banner"></div>
+  <div id="imkb-ticker-container">
+    <ul id="imkb-ticker">
+    </ul>
+  </div>
+  <div id="latest-ticker-container">
+    <ul id="latest-ticker">
+    </ul>  
+  </div>
+  <div id="piyasa-ticker"></div>
+  <div id="logo"></div>
+  <div id="login-area"></div>
+</div>
+
+<link type="text/css" rel="stylesheet" href="/assets/css/new_frontpage.css"/>    

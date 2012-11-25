@@ -1,18 +1,50 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-    <link type="text/css" rel="stylesheet" href="/static/main.css" />
 
-    <title>FLAS FLAS FLAS</title>
+  <meta property="og:title" content="PortalHaber" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://mehmetsapp.appspot.com" />
+  <meta property="og:image" content="http://sphotos-c.ak.fbcdn.net/hphotos-ak-snc6/167807_10150132024680832_4530281_n.jpg" />
+  <meta property="og:site_name" content="MehmetsApp" />
+  <meta property="fb:admins" content="567315831" />
+  
+  <link type="text/css" rel="stylesheet" href="/assets/css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="/assets/css/main.css"/>    
+
+  <title> Portal Haber</title>
+
 </head>
 
 <body>
-    <h2><a href='/' class='post-link'>Kucuk Mehmetin Haber Sitesi</a><h2>
 
-    <div id="content">
-    {% block content %}
+  <div id="fb-root">
+    <script src="/assets/js/fbConnect.js"></script>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div>
+    {% block header %}
     {% endblock %}
   </div>
+
+
+
+  <div id="user" class="user-area">
+      <div id="fb-auth" class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
+      <button id="fb-logout" style="display:none">Logout</button>    
+      <div id="user-info"></div>
+      <fb:like send="true" width="450" show_faces="true" />
+  </div>
+
+  
+  <div id="content">
+      {% block content %}
+      {% endblock %}
+  </div>
+
 </body>
 
 </html>

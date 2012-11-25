@@ -18,14 +18,10 @@ downSymbol = u"▼"
 upSymbol = u"▲"
 symbol = ""
 
-def generate_imkb_data(data_type):
-    if data_type not in ["json", "dict"]:
-        raise NotImplementedError    
-
+def generate_imkb_data():
     imkb = dict()
-    imkb['ENDEKS'] = []
-        
-    result = memcache.get(data_type)
+    imkb["ENDEKS"] = []
+    result = memcache.get("imkb_json")
     if result:
         return result
     else:   
@@ -59,11 +55,7 @@ def generate_imkb_data(data_type):
                     "SYMBOL": symbol})
                          
     imkb_json = json.dumps(imkb)
-    if data_type == "json":
-        result = imkb_json
-    else:
-        result = imkb
-    memcache.add(data_type, imkb_json, 300)
-        
+    result = imkb_json
+    memcache.add(imkb_json, result, 300)    
     return result
 

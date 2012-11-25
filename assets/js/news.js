@@ -1,0 +1,112 @@
+function renderCarousel(obj) {
+    var carouselString = '';
+    var carouselPagerString = '';    
+    var counter = 0;    
+    $.each(obj['carousel_posts'], function (key, value){
+        carouselString += '\
+            <li>\
+                <div class="carousel-image"><a href="' + value.LINK + '" target="_blank"><img src="'  + value.IMAGE + '" title="' + value.TITLE + '"/></a></div>\
+            </li>';
+        carouselPagerString += '\
+            <a data-slide-index="' + counter + '" href=""><img src="' + value.IMAGE + '"/>\
+            </a>';
+        counter += 1;
+        return (counter != 6);    
+    });
+    console.log("render completed");    
+    $('#news-carousel').html(carouselString);
+    $('#news-pager').html(carouselPagerString);
+    initCarousel();
+};
+
+function renderBox(obj) {
+    var newsString = '';
+    var counter = 0;    
+    $.each(obj['news_urls'], function(key, value){
+        var wordCount = 0;        
+        var wordNumber = 8;
+        var wordDisplay = '';
+        var wordHidden = '';
+        var detailFlag = true;         
+        wordArray = value.DESCRIPTION.split(' ')
+        wordCount = wordArray.length;
+        console.log(wordCount);
+        if (wordCount<14){
+            console.log('kisa');            
+            var detailFlag = false;                    
+            for (var i=0; i<wordCount; i++){
+                wordDisplay += wordArray[i] + ' ';
+            };
+        }else{        
+            for (var i=0; i<wordNumber; i++){
+                wordDisplay += wordArray[i] + ' ';
+            };
+            for (var i=wordNumber; i<wordArray.length; i++){
+                wordHidden += wordArray[i] + ' ';
+            };
+        };        
+        newsString += '\
+            <li class="news-list-li">\
+                <div class="news-list-item">\
+                    <div class="news-list-title">' + value.TITLE + '</div><div class="news-list-image"><img src="' + value.IMAGE + '"/></div><div class="news-list-description"><span class="news-list-description-display">' + wordDisplay + '</span><span class="three-dots">...</span><span class="news-list-description-hidden">' + wordHidden + '</div><div class="news-list-buttons"> <span class="news-list-item-button1">Devamını Oku</span><a href="' + value.LINK + '"  class="news-list-item-button2">Haberi Görüntüle</a><span class="news-list-item-source">@' + value.SRC +'</span><span class="news-list-item-timestamp timeago" title="' + value.PUBDATE + '"></span></div>\
+                </div>\
+                    </li>';
+        counter += 1;
+    });
+    $('.news-list').html(newsString);
+    $('.news-list-description-hidden').each(function() {
+        if ($(this).text() == '') {
+            var listItem = $(this).parent().parent();
+            listItem.find('.news-list-item-button1').hide();
+            listItem.find('.three-dots').hide();        
+        };
+    });        
+        
+};
+
+
+
+
+
+function initCarousel(){
+    $(function(){
+        $('#news-carousel').bxSlider({
+            mode:'fade',
+            captions:'true',
+            pagerCustom: '#news-pager'
+        });
+    });
+};
+
+function loadJSON(){
+    $.getJSON('/json/news', function(data){
+        console.log("render started");        
+        renderCarousel(data);
+        renderBox(data);
+    }).success(function(){
+        var showButton = $('.news-list-item-button1');               
+        showButton.click(function(){                        
+            var listItem = $(this).parent().parent();            
+            
+            if ($(this).text() == "Devamını Oku"){            
+                listItem.find('.news-list-description-hidden').show('fast');
+                listItem.find('.three-dots').hide();
+                 $(this).text("Ayrıntıyı Gizle");            
+            }else{
+                listItem.find('.news-list-description-hidden').hide();
+                listItem.find('.three-dots').show();
+                $(this).text("Devamını Oku");
+            };                        
+        });
+        
+        $('.news-list-item-button2').each(function(index){
+                $(this).frameWarp();
+        });    
+    });        
+};
+
+$(document).ready(function() {
+    loadJSON();
+});
+
+

@@ -1,7 +1,9 @@
-from rssparser import *
+from parsers.rssparser import RssParser
+
+import webapp2
 
 class NewsParser(RssParser):
     def get(self):
-        self.parse_rss('news_urls')
-        
+        hop = self.parse_rss('news_urls')
+        self.write(hop)
 app = webapp2.WSGIApplication([('/news_parser', NewsParser)], debug=True)

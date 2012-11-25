@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<head>
+  <link type="text/css" rel="stylesheet" href="/assets/css/liscroll.css"/>    
+</head>
+
+<body>
+
+<h2> Mehmet's Latest News Ticker</h2>
+
+<div id="news-ticker">    
+  <ul>        
+  {% for i in items %}
+    <li><span class="news-ticker-date">{{ i["PUBDATE"] }}</span><a href="{{ i["LINK"] }}><span class="news-ticker-title">{{ i["TITLE"] }}</span></a></li>
+  {% endfor %}
+  </ul>
+  <span id="preloader" class="preloader"></span>
+</div>
+
+</body>
+
+
+
+<script src="/assets/js/jquery-1.7.2.min.js"></script>
+<script src="/assets/js/liScroll.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var newsTicker = $('#news-ticker');
+        
+        function initTicker(){
+            $(function(){
+                newsTicker.liScroll();
+            });
+        };
+        initTicker();    
+    });
+</script>   
+
+
+

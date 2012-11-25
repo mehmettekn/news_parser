@@ -1,21 +1,52 @@
 from parsers import feedparser
+from models.urls import urllist, srcmap
+
+from google.appengine.api import memcache
+from google.appengine.api.urlfetch_errors import DeadlineExceededError
+from google.appengine.api import urlfetch
+
+from time import mktime, time
+from datetime import datetime, timedelta
+
 import json
+import logging
+
     
 url = "http://www.haberturk.com/rss/manset.xml"
 
+def generate_news():
+    news = dict()
+    news["POSTS"] = []
+    result = memcache.get('news1')
+    if result:
+        return result     
+    else:    
+        for url in urllist['latest_urls']:    
+            try:            
+                page = urlfetch.fetch(url).content    
+            except:
+                logging.error("DeadlineExceededError")
+                continue
+            xml = feedparser.parse(page)        
+            posts = xml["entries"]        
+            for post in posts:
+                pubdate = datetime.fromtimestamp(mktime(post['published_parsed']))                 
+                if datetime.utcnow() - timedelta(hours=2) > pubdate :
+                    continue                
+                src = srcmap[urllist["latest_urls"][url]]
+                               
+                pubtime = (pubdate + timedelta(hours=2)).strftime("%H:%M")            
+                if src=="Milliyet":pubtime=""                
+                news["POSTS"].append({
+                        "TITLE": post["title"],
+                        "LINK": post["link"],
+                        "PUBDATE": pubtime,
+                        "SRC": src
+                        })
+    result = json.dumps(news)    
+    memcache.add('news', result, 3000)
 
-    json = dict()
-    json['Posts'] = []
-    xml = feedparser.parse(url)
-
-    posts = xml["entries"]
-    for post in posts:
-        json['Posts'].append({
-                'Title':post['title'],
-                'Link': post['link'],
-                'pubDate':post['published_parsed']
-                })
-
+    return result
 
              
 

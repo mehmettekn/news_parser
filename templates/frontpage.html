@@ -1,11 +1,28 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block header %}
+    {% include "header.html" %}
+{% endblock %}
 
+{% block content %} 
+    
 	{% for p in posts %}
 		{{ p.render() | safe }}
 
 	{% endfor %}
-
+    
 {% endblock %}
+
+
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="/assets/js/jquerypp.custom.js"></script>
+<script src="/assets/framewarp/framewarp.js"></script>
+<script src="/assets/js/frame.js"></script>
+
+
+<link rel="stylesheet" href="/assets/css/frame.css" />
+<link rel="stylesheet" href="/assets/framewarp/framewarp.css" />
+
+
 

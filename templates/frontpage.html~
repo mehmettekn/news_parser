@@ -1,11 +1,119 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block header %}
+    {% include "header.html" %}
+{% endblock %}
 
+{% block content %} 
+    
 	{% for p in posts %}
 		{{ p.render() | safe }}
-		<br><br>
+
 	{% endfor %}
+    
+{% endblock %}
+
+
+{% block sidebar %}
+
+<table>
+    <tr>
+        <td>
+            <label>Haberturk</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <label>Milliyet</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Haberturk</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Haberturk</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Haberturk</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Haberturk</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Haberturk</label>
+        </td>        
+        <td>        
+        <div class="slideOne">	
+	        <input type="checkbox" value="None" id="slideOne" name="check" />
+	        <label for="slideOne"></label>
+        </div>
+        </td>
+    </tr>
+
+
+</table>
 
 {% endblock %}
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="/assets/js/jquerypp.custom.js"></script>
+<script src="/assets/framewarp/framewarp.js"></script>
+<script src="/assets/js/frame.js"></script>
+
+
+<link rel="stylesheet" href="/assets/css/frame.css" />
+<link rel="stylesheet" href="/assets/framewarp/framewarp.css" />
+
+
 

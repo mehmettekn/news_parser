@@ -1,0 +1,94 @@
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+
+ 
+width: 100%; 
+height: 18px; 
+margin: 0; 
+padding: 0;
+overflow: hidden;
+
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+left: 10px;
+top: 4px;
+width: 100%;
+overflow: hidden;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+left: 750px;
+font: 14px Helvetica;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+text-decoration: none;
+color:#0080FF;
+font: bold 14px Helvetica;
+margin: 0 50px 0 0;
+}
+
+ul.newsticker a:hover {
+    margin: 5px, 5px, 0, 0;
+}
+ 
+ul.newsticker span {
+margin: 0 10px 0 0;
+}
+
+.UP {
+color:green;
+}
+
+.DOWN {
+color:red;
+}
+
+.news-title {
+    color: #0080FF;
+    text-decoration: none;
+}
+
+.news-title:hover {
+    margin: 5px, 5px, 0px, 0px;
+}
+
+.news-pubdate {
+    color:blue;
+}
+
+.news-src {
+    font-size: 10px;
+}
+
+.preloader {
+    width:48px;
+    height:48px;
+    background: url('/assets/img/preloader3.gif') no-repeat;
+    position:absolute;
+    left:650px;
+    
+}
+
+.imkb-ticker-name {
+    color:#F2F2F2;
+}
+
+.imkb-ticker-value {
+    color:#E6E6E6;
+}
+
+

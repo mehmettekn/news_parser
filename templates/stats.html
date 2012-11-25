@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Haber Istatikstikleri</title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/stats.css" />
+<meta name="description" content="Uptime and performance statistics for {{domain}}.">
+
+<!--[if IE]><script src="assets/js/excanvas.min.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div id="page">
+	<div id="header">
+        <h1>Portal Haber</h1>
+        <h2>Haber İstatistikleri</h2>
+        
+        <div id="periodDropDown">
+        
+        	<span class="left"></span>
+            <span class="currentPeriod">Son 1 Saat</span>
+            <span class="arrow"></span>
+            <span class="right"></span>
+            
+        	<ul>
+                <li data-action='lasthour'>Son 1 Saat</li>
+                <li data-action='last6hours'>Son 6 Saat</li>
+                <li data-action='last12hours'>Son 12 Saat</li>                    
+                <li data-action="24hours">Bugün</li>
+                <li data-action="7days"> Bu Hafta</li>
+                <li data-action="30days">Bu Ay</li>
+            </ul>
+        </div>
+	</div>
+
+	<div id="place" class="performance section">
+    	<h3>Haberlerimizi Nereden Alıyoruz?</h3>
+        <table id=table>
+        <tr>        
+            <td>            
+                <p id="choices">
+                </p>           	
+            </td>            
+            <td>                
+                <div id="placeholder">	
+                    <span class="preloader"></span>
+                </div>
+            </td>
+        </tr>
+        </table>    
+    </div>
+    
+    
+    
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/jquery.flot.min.js"></script>
+
+</body>
+</html>

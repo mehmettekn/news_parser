@@ -1,4 +1,6 @@
-from parsers.rssparser import *
+from parsers.rssparser import RssParser
+
+import webapp2
 
 class SportsNewsParser(RssParser):
     def get(self):
